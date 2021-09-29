@@ -1,0 +1,12 @@
+.shop {
+  display: flex;
+}
+
+.leftShop {
+  width: 20%;
+}
+
+.rightShop {
+  margin-left: 20px;
+  width: 77%;
+}

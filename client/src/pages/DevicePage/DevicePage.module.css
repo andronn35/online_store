@@ -1,0 +1,67 @@
+.deviceCard {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.deviceImg img{
+  width: 350px;
+  height: 400px;
+}
+
+.deviceImg,
+.deviceName {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deviceImgName,
+.priceBtn {
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+}
+
+.deviceName {
+  font-size: 30px;
+}
+
+.priceBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid rgb(244, 247, 245);
+  border-radius: 10px;
+  background-color: rgb(244, 247, 245);
+  box-shadow: rgb(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+.price {
+  font-size: 50px;
+}
+
+.btn button {
+  font-size: 25px;
+  color: white;
+  background-color: rgb(95, 182, 79);
+  border: 1px solid rgb(95, 182, 79);
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 0, 0.1) 0px 5px 15px;
+}
+
+.btn button:hover {
+  background-color: rgb(89, 156, 77);
+  border: 1px solid rgb(89, 156, 77);
+}
+
+.options {
+  margin: 0 50px;
+}
+
+.dark {
+  background-color: rgb(244, 247, 245);
+}
+
+.light {
+
+}

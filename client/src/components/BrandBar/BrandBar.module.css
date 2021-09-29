@@ -1,0 +1,33 @@
+.brandBar {  
+  display: inline-flex;
+  flex-wrap: wrap;  
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0, 0.1) -0px 5px 5px;
+}
+
+.brandsElement,
+.selected {
+  padding: 0 15px;
+  font-size: 22px;
+  border: 1px solid rgb(209, 208, 208);
+  margin-top: -1px;
+  margin-right: -1px;
+  cursor: pointer;
+  
+}
+
+.brandsElement:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.brandsElement:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.brandsElement:hover {
+  background-color: rgb(233, 230, 230);
+}
+
+.selected {
+  box-shadow: rgb(0, 0, 0, 0.9) 0px 0px 15px 0px;
+}

@@ -1,0 +1,10 @@
+.showBy select{
+  margin-left: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+}
+
+.showBy select:focus {
+  border: 1px solid rgb(194, 192, 192);
+  outline: none;
+}

@@ -1,0 +1,7 @@
+.appRouter {
+  color: rgb(0, 0, 0);
+  font-family: 'Piazzolla', serif;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  height: calc(100% - 70px);
+}
