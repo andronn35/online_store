@@ -27,7 +27,6 @@ const Auth = () => {
         data = await login(email, password);
       } else {
         data = await registration(email, password);
-        console.log(data);
       }
       dispatch(setIsAuth(true))
       dispatch(loginUser(data))

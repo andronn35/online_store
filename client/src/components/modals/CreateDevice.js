@@ -89,6 +89,7 @@ const addDevice = () => {
             className="mt-3"
             placeholder="Введите название устройства"
           />
+          
           <Form.Control
             value={price}
             onChange={(e) => setPrice(Number(e.target.value))}
@@ -96,6 +97,7 @@ const addDevice = () => {
             placeholder="Введите стоимость устройства"
             type="number"
           />
+          Стоимость(рублей)
           <Form.Control className="mt-3" type="file"  onChange={selectFile}/>
           <hr />
           <Button variant={"outline-dark"} onClick={addInfo}>

@@ -8,6 +8,7 @@ import { loginUser, setIsAuth } from './../../redux/userReducer';
 const Navbar = () => {
 
   const isAuth = useSelector(state => state.user.isAuth)
+  const user = useSelector(state => state.user.user )
   const dispatch = useDispatch()
 
   const logOut = () => {
@@ -26,6 +27,13 @@ const Navbar = () => {
       
         {isAuth ? 
         <div className={classes.buttons}>
+          <NavLink to={user && "/basket/" + user.id}>
+            <div className={classes.basket}>
+              <div className={classes.basketCount}>
+                0
+              </div>
+            </div>
+          </NavLink>
           <div>
             <NavLink to="/admin"><button>Админ панель</button></NavLink>
           </div>
