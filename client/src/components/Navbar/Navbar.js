@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const isAuth = useSelector(state => state.user.isAuth)
   const user = useSelector(state => state.user.user )
+  const basketDevicesList = useSelector(state => state.basket.basketDevicesList) 
   const dispatch = useDispatch()
 
   const logOut = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
           <NavLink to={user && "/basket/" + user.id}>
             <div className={classes.basket}>
               <div className={classes.basketCount}>
-                0
+                {basketDevicesList.length}
               </div>
             </div>
           </NavLink>

@@ -37,7 +37,7 @@ export const fetchBasketDevices = (id) => {
 
 export const newBasketDevice = (id, deviceId) => {
   return (dispatch) => {
-    basketAPI.addNewDevice(id, deviceId).then((data) => { debugger
+    basketAPI.addNewDevice(id, deviceId).then((data) => { 
       dispatch(addDeviceToBasket(data.data))
     })
   }

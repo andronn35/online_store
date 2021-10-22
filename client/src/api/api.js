@@ -60,7 +60,7 @@ export const deviceAPI = {
 
 export const basketAPI = {
   addNewDevice(id, deviceId) {
-    return $authHost.put(`api/basket/${id}`, {params: {deviceId}})
+    return $authHost.put(`api/basket/${id}`, {deviceId})
   },
   getBasket(id) {
     return $authHost.get(`api/basket/${id}`)
